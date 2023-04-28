@@ -23,3 +23,5 @@ Node* insertEMPHelper(Node* , Node* );
 int countEmpsInSalaryRange(int min, int max, EmpDatabase);
 void countSalaryRangeHelper(Node *, int, int, int*);
 void freeEmpDatabase(Node *);
+
+//git issue push
