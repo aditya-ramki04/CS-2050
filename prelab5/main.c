@@ -25,8 +25,13 @@ int main(){
     int length = getListLength(head);
     printf("Length: %d", length);
 
-    freeList(head);
+    List *emp = freeList(head);
+
+    //test freeList
+    if(emp == NULL){
+        printf("list freed");
+    }
 
     return 0;
-    
+
     }

@@ -6,7 +6,6 @@ List * initList(int* ec){
         return NULL;
     }
     else{
-        p->object = 0;
         p->next = NULL;
         ec = 0;
         return p;
@@ -44,6 +43,13 @@ int getListLength(List* head){
 }
 
 List * freeList(List* head){
-    free(head);
+   List *tmp;
+
+   while (head != NULL)
+    {
+       tmp = head;
+       head = head->next;
+       free(tmp);
+    }
     return NULL;
 }
